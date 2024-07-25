@@ -153,92 +153,20 @@
 
 /* section-thre */
 
-.section-three {
-  background-color: #f4f4fd;
-  height: 780px;
-  padding: 120px 0;
-}
-
-.ourteam-h {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 72px;
-}
-
 .ourteam-list-item {
-  background-color: #ffffff;
-  border-radius: 0 0 4px 4px;
   width: calc((100% - 3 * 24px) / 4);
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .ourteam-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
   gap: 24px;
-}
-
-.ourteem-workers {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-  text-align: center;
-}
-
-.ourteem-position {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  text-align: center;
 }
 
 .work-position {
   padding: 32px 0;
 }
 
-.ourteem-svg-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 24px;
-}
-
-.our-svg {
-  fill: #f4f4fd;
-}
-
-.ourteem-svg-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-top: 8px;
-}
-
 .ourteem-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -249,23 +177,7 @@
 
 /* section-four */
 
-.section-four {
-  padding: 120px 0 120px 0;
-}
-
-.h-portfolio {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 72px;
-}
-
 .out-portfolio-list {
-  display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
@@ -273,32 +185,6 @@
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.fun-form {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
-
-.portfolio-functionality {
-  display: block;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
-.portfolio-form {
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
 
 .portfolio-wrap {
@@ -332,11 +218,10 @@
 /* footer */
 
 .footer-content {
-  background-color: #2e2f42;
   padding: 100px 0;
 }
 
-.footer-logo {
+/* .footer-logo {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -346,28 +231,10 @@
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
-}
-
-.footer-logo-part {
-  color: #f4f4fd;
-}
+} */
 
 .text-footer {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
   width: 264px;
-}
-
-.soc-media-h {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 16px;
 }
 
 .footer-full {
@@ -380,35 +247,13 @@
 }
 
 .soc-media-list {
-  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: row;
-  gap: 16px;
 }
 
 .soc-media-item {
-  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 40px;
-  height: 40px;
-}
-
-.soc-media-link {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 8px;
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-svg-pic {
-  fill: #f4f4fd;
 }
 
 .soc-media-link:hover,
@@ -453,7 +298,7 @@
   color: #ffffff;
 }
 
-.ftr-sub-btn {
+/* .ftr-sub-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -475,7 +320,7 @@
 
 .svg-frame-footer {
   margin-left: 16px;
-}
+} */
 
 .ftr-sub-btn:hover,
 .ftr-sub-btn:focus {
