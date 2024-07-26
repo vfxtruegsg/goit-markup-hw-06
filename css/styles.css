@@ -294,6 +294,19 @@ img {
   cursor: pointer;
 }
 
+.mobile-menu-close:hover,
+.mobile-menu-close:focus,
+.mobile-menu-close:active {
+  background-color: #404bbf;
+  border: none;
+}
+
+.mobile-menu-close:hover .close-svg-icon,
+.mobile-menu-close:focus .close-svg-icon,
+.mobile-menu-close:active .close-svg-icon {
+  fill: #ffffff;
+}
+
 .mobile-menu-navigation-list {
   display: flex;
   flex-direction: column;
