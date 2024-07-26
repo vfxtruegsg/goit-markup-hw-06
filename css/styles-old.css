@@ -486,19 +486,6 @@
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
-}
-
-.modal-check:checked + .modal-check-text .fake-checkbox {
-  background-color: #404bbf;
-  fill: #f4f4fd;
-  border: none;
-} */
-
-/* .spn-text {
-  line-height: 1.33333;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: #4d5ae5;
 } */
 
 .backdrop-btn {
@@ -520,9 +507,4 @@
   cursor: pointer;
   margin: 24px auto 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop-btn:hover,
-.backdrop-btn:focus {
-  background-color: #404bbf;
 }
