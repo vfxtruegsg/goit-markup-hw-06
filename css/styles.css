@@ -317,7 +317,9 @@ img {
   color: #404bbf;
 }
 
-.navigation-list-item-link:active {
+.navigation-list-item-link:active,
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus {
   color: #404bbf;
 }
 
@@ -905,7 +907,9 @@ img {
   fill: #f4f4fd;
 }
 
-.soc-media-link:active {
+.soc-media-link:active,
+.soc-media-link:hover,
+.soc-media-link:focus {
   background-color: #31d0aa;
 }
 
@@ -929,7 +933,9 @@ img {
   margin-bottom: 16px;
 }
 
-.footer-field:active {
+.footer-field:active,
+.footer-field:hover,
+.footer-field:focus {
   border-color: #31d0aa;
 }
 
@@ -967,11 +973,300 @@ img {
   margin-left: 16px;
 }
 
-.ftr-sub-btn:active {
+.ftr-sub-btn:active,
+.ftr-sub-btn:hover,
+.ftr-sub-btn:focus {
   background-color: #31d0aa;
 }
 
 .footer-sec {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .double-section {
+    display: flex;
+    margin-left: 92px;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-sec {
+    flex-direction: row;
+  }
+
+  .footer-three-section {
+    margin-left: 92px;
+  }
+
+  .soc-media-h {
+    text-align: left;
+  }
+
+  .footer-field {
+    width: 264px;
+  }
+
+  .ftr-sub-btn {
+    margin: 0 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-content {
+    padding: 100px 0;
+  }
+
+  .footer-full {
+    display: flex;
+  }
+
+  .double-section {
+    margin-left: 0;
+    gap: 120px;
+  }
+
+  .footer-three-section {
+    margin-left: 80px;
+  }
+}
+
+/* MODAL */
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  width: 288px;
+  min-height: 623px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 16px 24px 16px;
+}
+
+.btn-for-close-svg {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  stroke: rgba(0, 0, 0, 0.1);
+  stroke-width: 1px;
+  padding: 0px;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 24px;
+  right: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close-svg-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.modal-fields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.mod-fld-lb {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.input-field {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding-left: 38px;
+  outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+}
+
+.modal-field-wrap {
+  position: relative;
+}
+
+.field-svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.txt-area-field-wrap {
+  position: relative;
+  height: 138px;
+  margin-bottom: 16px;
+}
+
+.textarea-field {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 8px 16px;
+  outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.textarea-field::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.input-field:active,
+.input-field:focus,
+.textarea-field:active,
+.textarea-field:focus {
+  border-color: #4d5ae5;
+}
+
+.input-field:active + .field-svg,
+.input-field:focus + .field-svg {
+  fill: #4d5ae5;
+}
+
+.check-field {
+  margin-bottom: 24px;
+}
+
+.modal-check-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.fake-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.modal-check:checked + .modal-check-text .fake-checkbox {
+  background-color: #404bbf;
+  fill: #f4f4fd;
+  border: none;
+}
+
+.spn-text {
+  line-height: 1.33333;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+  margin-left: 24px;
+}
+
+.backdrop-btn {
+  display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  margin: 24px auto 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-btn:hover,
+.backdrop-btn:focus,
+.backdrop-btn:active {
+  background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .spn-text {
+    margin-left: 0;
+  }
 }

@@ -217,10 +217,6 @@
 
 /* footer */
 
-.footer-content {
-  padding: 100px 0;
-}
-
 /* .footer-logo {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -334,7 +330,7 @@
 
 /* MODAL */
 
-.backdrop {
+/* .backdrop {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
@@ -347,30 +343,21 @@
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.backdrop.is-open {
+/* .backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
+} */
 
-.modal {
+/* .modal {
   width: 408px;
   min-height: 584px;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px 24px;
-}
+} */
 
-.btn-for-close-svg {
+/* .btn-for-close-svg {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -388,7 +375,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
+} */
 
 .btn-for-close-svg:hover,
 .btn-for-close-svg:focus {
@@ -404,16 +391,6 @@
 .btn-for-close-svg:hover .close-svg-icon,
 .btn-for-close-svg:focus .close-svg-icon {
   fill: #ffffff;
-}
-
-.modal-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  margin-bottom: 16px;
 }
 
 .modal-fields {
@@ -432,7 +409,7 @@
   margin-bottom: 4px;
 }
 
-.input-field {
+/* .input-field {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -446,9 +423,9 @@
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
-}
+} */
 
-.input-field:active,
+/* .input-field:active,
 .input-field:focus,
 .textarea-field:active,
 .textarea-field:focus {
@@ -458,9 +435,9 @@
 .input-field:active + .field-svg,
 .input-field:focus + .field-svg {
   fill: #4d5ae5;
-}
+} */
 
-.modal-field-wrap {
+/* .modal-field-wrap {
   position: relative;
 }
 
@@ -494,25 +471,9 @@
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-}
+} */
 
-.textarea-field::placeholder {
-  color: rgba(46, 47, 66, 0.4);
-}
-
-.check-field {
-  margin-bottom: 24px;
-}
-
-.modal-check-text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
-
-.fake-checkbox {
+/* .fake-checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -531,14 +492,14 @@
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
-}
+} */
 
-.spn-text {
+/* .spn-text {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-}
+} */
 
 .backdrop-btn {
   display: block;
