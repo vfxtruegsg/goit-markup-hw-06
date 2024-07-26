@@ -484,6 +484,15 @@ img {
   .h-one {
     margin-bottom: 48px;
   }
+
+  .service-button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .service-button:hover,
+  .service-button:focus {
+    background-color: #404bbf;
+  }
 }
 
 /* SECTION-TWO */
@@ -1092,9 +1101,22 @@ img {
   cursor: pointer;
 }
 
+.btn-for-close-svg:hover,
+.btn-for-close-svg:focus,
+.btn-for-close-svg:active {
+  background-color: #404bbf;
+  border: none;
+}
+
 .close-svg-icon {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-for-close-svg:hover .close-svg-icon,
+.btn-for-close-svg:focus .close-svg-icon,
+.btn-for-close-svg:active .close-svg-icon {
+  fill: #ffffff;
 }
 
 .modal-text {
