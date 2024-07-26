@@ -357,7 +357,9 @@ img {
   color: #404bbf;
 }
 
-.mobile-menu-link:active {
+.mobile-menu-link:active,
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
   color: #404bbf;
 }
 
@@ -375,6 +377,12 @@ img {
   align-items: center;
   justify-content: center;
   fill: #f4f4fd;
+}
+
+.mob-men-soc-media-link:active,
+.mob-men-soc-media-link:hover,
+.mob-men-soc-media-link:focus {
+  background-color: #404bbf;
 }
 
 /* SECTION-ONE */
